@@ -1,0 +1,333 @@
+/*css style reset*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.4rem;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+}
+/*css style reset end*/
+.emo{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.emo img{
+	height: 40px;
+	width: 60px;
+}
+.wrappler{
+	max-width: 1600px;
+	margin: 0 auto;
+	/* outline: red solid 1px; */
+	position: relative;
+	background: white;
+}
+.wrappler p{
+	padding: 1rem;
+	font-family: 'Lobster', 'Calibri', cursive;
+	font-size: 2rem;
+	text-align: center;
+}
+.greetings h2, p{
+	padding: 1rem;
+	font-family: 'Lobster', 'Calibri', cursive;
+	font-size: 2rem;
+	text-align: center;
+	color: #009900;
+	position:relative;
+	animation: animateleft 1.2s;	
+}
+.greetings p{
+	magin: 0;
+	font-size: 1.25rem;
+}
+.nav, .footer{
+	font-family: 'Lobster', 'Calibri', cursive;
+	color: white;
+	background: black;
+	height: 6rem;
+}
+.footer{
+	height: 6rem;
+}
+.center{
+	/* outline: green solid 1px; */
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 1rem;
+	text-align: center;
+}
+.box{
+	padding: 0.5rem 0rem;
+}
+.book{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	padding: 4rem 0;
+	/* outline: 1px solid green; */
+	margin: 0 auto;
+}
+.book img{
+	width: 300px;
+	height: 354px;
+	position: relative;
+	left: 70px;
+	bottom: 0px;
+	z-index: 10;
+}
+.book_title{
+	height: 40px;
+	text-transform: uppercase;
+	font-family: 'Calibri', cursive;
+	text-align: center;
+	
+}
+.owner a{
+	width: 120px;
+	height: 2.5rem;
+	color: #3333ff;
+	font-size: 1.25rem;
+	padding: 20px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: rgb(128, 255, 191);
+	background: -moz-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: -webkit-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: -o-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: -ms-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: linear-gradient(180deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	text-transform: uppercase;
+	font-family: 'Lobster', 'Calibri', cursive;
+	position: relative;
+	left: 100px;
+	bottom: 0px;
+	transition: 0.7s background linear;
+	z-index: 20;
+}
+.owner a:hover{
+background: rgb(64, 255, 0);
+}
+#myForm{
+	display: none;
+    position: fixed; 
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+#myFormContent{
+	position: relative;
+	background-color: #fefefe;
+    margin: 1% auto; 
+    padding: 20px;
+    border: 1px solid rgb(128, 255, 191);
+    max-width: 50%;
+	min-height: 75%;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+#myFormContent p{
+	font-size: 1.25rem;
+	animation: none;
+	color: black;
+}
+.center_form{
+	font-family: 'Calibri';
+	text-align: center;
+	padding: 1rem 0rem;
+}
+.book_form{
+	margin: 0 auto;
+	max-width:300px;
+}
+.book_form img{
+	width: 300px;
+	height: 354px;
+	position: relative;
+	left: 25px;
+}
+#close{
+    color: #000;
+    float: right;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form_list{
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 0.5rem 0rem;
+}
+
+#myFormContent input[type='text']{
+	margin: 0.5rem;
+	width:12rem;
+	height: 2.25rem;
+	font-size: 1.75rem;
+	font-family: 'Lobster', 'Calibri', cursive;
+	border: 2px solid #e6e6e6;
+}
+#myFormContent button[type='submit'], button[type='reset']{
+	width: 8rem;
+	height: 2.5rem;
+	color: #3333ff;
+	font-size: 1.25rem;
+	font-family: 'Calibri', cursive;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: rgb(128, 255, 191);
+	background: -moz-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: -webkit-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: -o-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: -ms-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: linear-gradient(180deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	
+}
+#myFormContent button[type='reset']{
+	background: rgb(128, 255, 191);
+	background: -moz-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: -webkit-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: -o-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: -ms-linear-gradient(270deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+	background: linear-gradient(180deg, rgb(128, 255, 191) 30%, rgb(0, 230, 115) 70%);
+}
+#myFormContent input[type='text']:focus{
+	-moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 2px solid #88D5E9;
+}
+.thanks h1{
+	font-weight: bold;
+	font-family: 'Lobster', 'Calibri', cursive;
+	font-size: 8rem;
+	color: #009900;
+	line-height: normal;
+}
+.red{
+	color: red;
+	font-weight: bold;
+	font-family: 'Lobster', 'Calibri', cursive;
+}
+@keyframes animateleft{
+	from{left:-300px;opacity:0} 
+	to{left:0;opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/*BACK TO TOP*/
+.cd-top {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+   overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #2493FC url("img/cd-top-arrow.svg") no-repeat center 50%;
+  /* visibility: hidden; */
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  z-index: 101;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+   visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  opacity: .5;
+}
+/*END BACK TO TOP*/
+
+/*RWD*/
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+@media only screen and (max-width:1430px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4 { width: 49.2%; }
+}
+@media only screen and (max-width:825px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+	#myFormContent{
+    max-width: 100%;
+	min-height: 80%;
+	}
+	#myFormContent img{
+	width: 100%;
+    height: auto;
+	}
+	.thanks h1{
+	font-weight: bold;
+	font-family: 'Lobster', 'Calibri', cursive;
+	font-size: 2rem;
+}
+/*RWD END*/
